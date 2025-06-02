@@ -24,7 +24,7 @@ p {
 
 .hero::before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4); /* Slightly lighter overlay */
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
 }
@@ -39,10 +39,12 @@ p {
 .hero h1 {
   font-size: 2.5rem;
   font-weight: bold;
+  color: #ffffff; /* White font for headline */
 }
 
 .hero p {
   font-size: 1.2rem;
+  color: #cceeff; /* Soft blue for subheadline */
 }
 
 .cta-button {
@@ -83,4 +85,42 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .value-section {
+    padding: 40px 15px;
+  }
+
+  .value-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .image-section {
+    padding: 30px 15px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 15px;
+  }
 }
